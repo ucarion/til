@@ -1,3 +1,20 @@
+{{ define "title" }}
+Ulysse Carion's TILs
+{{ end }}
+
 {{ define "main" }}
-hello, world
+
+<p class="mb-8">
+  Stuff I've learned.
+</p>
+
+{{ range $.Site.RegularPages.ByDate }}
+
+<div class="flex gap-x-4">
+  <a class="underline" href="{{ .Permalink }}">{{ .Title }}</a>
+  <div class="text-gray-500">{{ .Date.Format "2 January 2006" }}</div>
+</div>
+
+{{ end }}
+
 {{ end }}
