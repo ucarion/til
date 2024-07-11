@@ -4,7 +4,7 @@ date: 2024-07-11T10:42:15-07:00
 ---
 
 I've set this up a million times, always forget how it's done. Here's the
-minimal Hugo setup, because they can't seem to article it themselves.
+minimal Hugo setup, because they can't seem to write it out themselves.
 
 ```
 .

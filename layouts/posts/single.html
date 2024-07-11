@@ -1,11 +1,12 @@
 {{ define "title" }}
-  {{ .Title }} | Ulysse's TILs
+  {{ .Title }} | Ulysse Carion's TILs
 {{ end }}
 
 {{ define "main" }}
   <main>
-    <h1>{{ .Title }}</h1>
-    <div>
+    <h1 class="text-3xl font-semibold">{{ .Title }}</h1>
+    <div class="text-gray-500">{{ .Date.Format "2 January 2006" }}</div>
+    <div class="mt-4 prose">
       {{ .Content }}
     </div>
   </main>
