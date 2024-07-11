@@ -2,7 +2,10 @@
   "scripts": {
     "dev": "npm-run-all -p dev:*",
     "dev:hugo": "hugo server",
-    "dev:tailwindcss": "tailwindcss -i index.css -o static/index.css --watch"
+    "dev:tailwindcss": "tailwindcss -i index.css -o static/index.css --watch",
+    "build": "npm-run-all build:tailwindcss build:hugo",
+    "build:hugo": "hugo",
+    "build:tailwindcss": "tailwindcss -i index.css -o static/index.css"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.13",
